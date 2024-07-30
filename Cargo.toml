@@ -1,0 +1,14 @@
+[package]
+name = "dioxus-recompile-test"
+version = "0.1.0"
+authors = ["Evan Almloff <evanalmloff@gmail.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+dioxus = { git = "https://github.com/DioxusLabs/dioxus", rev = "df8c7e187282811645bb984f37e09ff70d7458c7", features = ["fullstack"] }
+dep = { path = "./dep" } 
+
+[features]
+server = ["dioxus/axum"]
+web = ["dioxus/web"]

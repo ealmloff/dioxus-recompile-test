@@ -1,0 +1,5 @@
+- `cargo install --git https://github.com/DioxusLabs/dioxus dioxus-cli`
+- Run `dx serve` 
+- search for `timestamp: ` in the target directory (it should show up twice)
+- change some rust code
+- search for `timestamp: ` again. It still only shows up twice. The dependency did not get recompiled.
